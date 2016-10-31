@@ -1,0 +1,602 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: rgba(0,0,0,0.9);
+}
+
+body {
+    position: relative;
+}
+
+.slidingBody {
+    background-color: #eee;
+    position: relative;
+    -webkit-box-shadow: -2.5px 0px 15px 0px rgba(125,121,125,1);
+    -moz-box-shadow: -2.5px 0px 15px 0px rgba(125,121,125,1);
+    box-shadow: -2.5px 0px 15px 0px rgba(125,121,125,1);
+}
+
+@media screen and (min-width: 781px) {
+    .slidingBody {
+        left: 0 !important;
+    }
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0 !important;
+    opacity: 0.9;
+}
+
+h4.title {
+    color: #212121;
+    font-size: 28px;
+    opacity: 0.7 !important;
+    text-align: center;
+    margin-bottom: 25px !important;
+}
+
+.title .fa {
+    margin-right: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+        width: 70% !important;
+    }
+}
+
+.content {
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.content section {
+    margin-bottom: 75px;
+}
+
+.content section:last-child {
+    margin-bottom: 0 !important;
+}
+
+.depth {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+/************************
+Z-Indexes
+************************/
+body {
+    z-index: 1;
+}
+header {
+    z-index: 3;
+}
+.content {
+    z-index: 2;
+}
+.slides-container div, .slides-container img {
+    z-index: 5 !important;
+}
+.overlay {
+    z-index: 5;
+}
+.sidebar {
+    z-index: -1;
+}
+.desktopSidebar {
+    z-index: 4;
+}
+.loginOverlay {
+    z-index: 100;
+}
+
+
+/************************
+Border radiuses
+************************/
+.yourTeacher, .forNextTime, .flexLesson {
+    border-radius: 4px;
+}
+
+
+/************************
+Login form
+************************/
+.loginOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginOverlay form {
+    text-align: center;
+    width: 200px;
+}
+
+.loginOverlay form input {
+    border-radius: 4px;
+    max-width: 100%;
+    background: none !important;
+    border: 1px solid black;
+    font-family: 'Lato', sans-serif;
+}
+
+.loginOverlay form input[type=text] {
+    margin-bottom: 50px;
+}
+
+.loginOverlay form input[type=text], .loginOverlay form input[type=password] {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.loginOverlay form input[type=button] {
+    background: none !important;
+    text-transform: uppercase;
+    margin-top: 50px;
+    padding: 10px 15px;
+    font-size: 11px !important;
+    letter-spacing: 1px;
+    border: 1px solid black;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.loginOverlay form input[type=button]:focus {
+    outline: none;
+}
+
+.loginOverlay form input[type=button]:hover {
+    -moz-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+/************************
+Desktop sidebar
+************************/
+ul.mainNav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul.mainNav li {
+    display: inline-block;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 22px 2.5%;
+}
+ul.mainNav li:hover {
+    cursor: pointer;
+}
+@media screen and (min-width: 781px) {
+    .sidebar {
+        width: 30%;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: -30%;
+        height: 100%;
+    }
+    header .fa-bars {
+        display: none;
+    }
+}
+@media screen and (max-width: 780px) {
+    .mainNav {
+        display: none;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0%;
+}
+.mobileMenu {
+    width: 50%;
+    height: 100%;
+    background-color: #fafafa;
+    position: relative;
+}
+.mobileMenu .sideImg {
+    background: url('http://hallsf.imperial.ac.uk/gabor/wp-content/uploads/2015/12/Brandenburg-Gate-West-Berlin.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+.mobileMenu .sideImg .sideOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.35);
+}
+.mobileMenu .sideImg .sideOverlay p {
+    position: relative;
+    margin: 0;
+    left: auto !important;
+    width: 100% !important;
+    padding: 0 !important;
+    height: 200px;
+    line-height: 200px;
+    color: #fafafa;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.mobileMenu .fa {
+    margin-right: 10px;
+}
+.mobileMenu .fa-times {
+    font-size: 35px;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fafafa;
+    margin-right: 0 !important;
+}
+.mobileMenu .fa-times.for-mobile {
+    padding: 12.5px 4%;
+}
+.mobileMenu ul {
+    margin: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    padding: 0;
+}
+.mobileMenu ul li {
+    display: block;
+    text-transform: capitalize;
+    font-size: 20px;
+    opacity: 0.85;
+    padding: 25px;
+}
+.mobileMenu ul li .fa {
+    opacity: 1 !important;
+}
+.mobileMenu ul li:hover {
+    cursor: pointer;
+}
+.mobileMenu p {
+    position: fixed;
+    bottom: 0;
+    padding-left: 35px;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.85;
+}
+.mobileMenu p a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 420px) {
+    .mobileMenu .sideImg .sideOverlay p {
+        font-size: 20px !important;
+    }
+    .flexLesson span {
+        font-size: 19px !important;
+        padding-left: 10px;
+    }
+    .flexLesson .fa {
+        font-size: 25px !important;
+    }
+    .numberContainer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .mobileMenu .sideImg .sideOverlay p {
+        font-size: 18px !important;
+    }
+    .mobileMenu ul li {
+        font-size: 16px;
+    }
+    .mobileMenu p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .mobileMenu .sideImg .sideOverlay p {
+        font-size: 15px !important;
+    }
+    .mobileMenu ul li {
+        font-size: 13px;
+    }
+    .mobileMenu p {
+        font-size: 11px;
+    }
+    .lesson span {
+        font-size: 18px !important;
+    }
+}
+
+/************************
+Header
+************************/
+.preContent {
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.35);
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.headline {
+    font-family: 'Montserrat', sans-serif;
+    color: #fafafa;
+    width: 80%;
+    display: block;
+    text-align: center;
+    line-height: 1em;
+}
+
+header {
+    background-color: #2979FF;
+    color: #fff;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+header .fa-bars.for-mobile {
+    padding: 15px 4%;
+}
+
+header .fa-bars.not-for-mobile {
+    padding: 15px 2%;
+}
+
+.fa-bars:hover, .fa-times:hover {
+    cursor: pointer;
+}
+
+/************************
+Your Teacher
+************************/
+.yourTeacher {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 0 !important;
+    margin-top: 200px;
+    height: 377px;
+}
+
+.yourTeacher h3 {
+    margin: 25px 0 5px !important;
+    opacity: 0.8 !important;
+}
+
+.yourTeacher img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.yourTeacher .inner {
+    position: relative;
+    top: -95px;
+}
+
+.yourTeacher h1 {
+    font-size: 35px;
+    letter-spacing: 0.5px;
+}
+
+.yourTeacher a {    
+    text-decoration: none;
+}
+
+.yourTeacher .fa {
+    margin-right: 15px;
+}
+
+.yourTeacher .phone {
+    height: 100px;
+    line-height: 100px;
+    background-color: #00C853;
+    color: #fff;
+    font-size: 20px;
+}
+
+.yourTeacher .mail {
+    height: 100px;
+    line-height: 100px;
+    background-color: #0091EA;
+    color: #fff;
+    font-size: 20px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/************************
+Homeworks
+************************/
+
+.forNextTime {
+    background-color: #fff;
+    padding: 40px 60px;
+    font-size: 18px;
+}
+
+.forNextTime ul {
+    margin: 0;
+    padding: 0;
+    opacity: 0.9;
+}
+
+.forNextTime ul li:first-child {
+    padding-top: 0 !important;
+}
+
+.forNextTime ul li:last-child {
+    padding-bottom: 0 !important;
+}
+
+.forNextTime ul li {
+    padding: 10px 0;
+}
+
+/************************
+Lessons
+************************/
+.lessonsArchive {
+    background-color: #eee;
+}
+
+.lesson {
+    margin-bottom: 50px;
+}
+
+.flexLesson:hover {
+    cursor: pointer;
+}
+
+.expanded .flexLesson {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.lessonsArchive .lesson:last-child {
+    border-bottom: none !important;
+}
+
+.lessonsArchive .lesson:last-child {
+    margin-bottom: 0 !important;
+}
+
+.lessonsArchive .lesson {
+    border-bottom: 1px solid #fafafa;
+}
+
+.flexLesson {
+    -moz-transition: border-radius 0.15s ease-in-out;
+    -webkit-transition: border-radius 0.15s ease-in-out;
+    transition: border-radius 0.15s ease-in-out;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    padding: 0 5%;
+    height: 75px;
+    line-height: 75px;
+    background-color: #2979FF;
+    color: #fafafa;
+}
+
+.numberContainer {
+    width: 50px;
+}
+
+.flexLesson span {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    left: -10px;
+}
+
+.iconContainer {
+    width: 50px;
+    font-size: 25px;
+    text-align: right;
+}
+
+.lessonNumber {
+    background-color: #fafafa;
+    color: #2979FF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+}
+
+.lessonContent {
+    background-color: #fff;
+    color: rgba(0,0,0,0.9);
+    line-height: normal;
+    display: none;
+    padding: 40px 60px;
+}
+
+.lessonContent ul {
+    margin: 5px 0 25px;
+}
+
+.lessonContent ul li {
+    margin: 0;
+}
+
+@media screen and (max-width: 780px) {
+    .preContent img {
+        position: fixed;
+    }
+    .lessonContent ul {
+        padding: 0 !important;
+        padding-left: 18px !important;
+    }
+}
