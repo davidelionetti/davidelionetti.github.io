@@ -4,6 +4,7 @@ html, body {
     width: 100%;
     font-size: 16px;
     overflow-x: hidden;
+    overflow-y: hidden;
     color: rgba(0,0,0,0.9);
 }
 
@@ -593,5 +594,9 @@ Lessons
 @media screen and (max-width: 780px) {
     .preContent img {
         position: fixed;
+    }
+    .lessonContent ul {
+        padding: 0 !important;
+        padding-left: 18px !important;
     }
 }

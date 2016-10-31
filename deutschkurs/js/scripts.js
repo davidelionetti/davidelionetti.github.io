@@ -15,7 +15,7 @@ $(".headline").fitText(1.2, { minFontSize: '30px', maxFontSize: '70px' });
 
 $( ".fa-bars.for-mobile" ).click(function() {
     
-    $( ".slidingBody" ).animate({
+    $( ".slidingBody, header" ).animate({
         left: "50%",
     }, 250);
     
@@ -29,7 +29,7 @@ $( ".fa-bars.for-mobile" ).click(function() {
 });
 
 $(".closeMenu, .fa-times").click(function() {
-    $( ".slidingBody" ).animate({
+    $( ".slidingBody, header" ).animate({
         left: "0",
     }, 250);
     $('.slidingBody').removeClass('slided');
@@ -38,7 +38,7 @@ $(".closeMenu, .fa-times").click(function() {
 
 $('.spacer, .mobileMenu ul li').click(function() {
     setTimeout(function(){
-        $( ".slidingBody" ).animate({
+        $( ".slidingBody, header" ).animate({
             left: "0",
         }, 250);
         
@@ -57,8 +57,8 @@ $( ".flexLesson" ).click(function() {
 });
 
 function pasuser(form) { 
-if (form.id.value=="emanuele") { 
-if (form.pass.value=="halloberlin") { $('.hidden').removeClass('hidden'); $('.loginOverlay').fadeOut('slow'); } 
+if (form.id.value=="Emanuele") { 
+if (form.pass.value=="halloberlin") { $('.hidden').removeClass('hidden'); $('.loginOverlay').fadeOut('slow'); $('html, body').css('overflow-y', 'scroll'); } 
 else { alert("Wrong Password") } 
 } 
 else { alert("Wrong Username") } 
