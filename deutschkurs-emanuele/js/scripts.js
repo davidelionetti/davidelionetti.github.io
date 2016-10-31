@@ -58,7 +58,7 @@ $( ".flexLesson" ).click(function() {
 
 function pasuser(form) { 
 if (form.id.value=="Emanuele") { 
-if (form.pass.value=="halloberlin") { $('.hidden').removeClass('hidden'); $('.loginOverlay').fadeOut('slow'); $('html, body').css('overflow-y', 'scroll'); } 
+if (form.pass.value=="halloberlin") { $('.loginOverlay').fadeOut('slow'); $('html, body').css('overflow-y', 'scroll'); } 
 else { alert("Wrong Password") } 
 } 
 else { alert("Wrong Username") } 
