@@ -88,7 +88,7 @@
     })
 
 // Show nav mobile
-$('.fa-bars').click(function(){
+$('.fa-bars').on('click', function(){
     $( ".sidebar" ).show('slide');
     $( ".spacer" ).delay(270).fadeIn('slow');
     $('#mobilenav').onePageNav({
@@ -99,12 +99,12 @@ $('.fa-bars').click(function(){
 
 
 // Hide nav mobile
-$('.mobile-nav li a').click(function(){
+$('.mobile-nav li a').on("click", function(){
     $( '.mobile-nav' ).delay(100).hide('slide');
     $( '.spacer' ).fadeOut('fast');
 });
 
-$('.spacer').click(function(){
+$('.spacer').on("click", function(){
     $( '.mobile-nav' ).delay(100).hide('slide');
     $( '.spacer' ).fadeOut('fast');
 });

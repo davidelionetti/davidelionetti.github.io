@@ -302,17 +302,6 @@
 
           ga('create', 'UA-86104092-1', 'auto');
           ga('send', 'pageview');
-            
-        (function() {
-            var win = window;
-            var removeUtms = function(){
-                var location = win.location;
-                if (location.search.indexOf('utm_') != -1 && history.replaceState) {
-                    history.replaceState({}, '', window.location.toString().replace(/(\&|\?)utm([_a-z0-9=]+)/g, ""));
-                }
-            };
-            ga('send', 'pageview', { 'hitCallback': removeUtms });
-        })();
 
         </script>
     </body>
