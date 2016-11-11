@@ -92,6 +92,9 @@ html, body, div, p {
     box-shadow: -2.5px 0px 15px 0px rgba(125,121,125,1);
 }
 
+.slidingBody.slided {
+}
+
 a, .linkable {
     text-decoration: none;
     -webkit-transition: all 0.25s ease-in-out;
@@ -335,23 +338,7 @@ Sidebar
     left: 0;
     right: 0;
     bottom: 0;
-}
-
-.sidebar hr {
-    position: absolute;
-    width: 80%;
-    left: 10%;
-    top: 55px;
-    opacity: 0.5;
-}
-
-.sidebar .siteTitleMobile {
-    font-weight: bold;
-    opacity: 0.8;
-    width: 50%;
-    position: relative;
-    top: 16.5px;
-    font-size: 20px;
+    overflow-y: scroll;
 }
     
 .sidebar ul {
@@ -359,17 +346,39 @@ Sidebar
     background-color: #fff;
     width: 50%;
     height: 100%;
-    margin: 0 !important;
-    padding: 90px 0 0 0 !important;
-    text-align: center;
+    margin: 0 0 0 2.5%!important;
+    padding: 0 !important;
+    text-align: left;
 }
 
 .sidebar ul li {
-    padding-bottom: 35px;
-    text-transform: uppercase;
-    font-size: 18px;
+    height: 85px;
+    line-height: 85px;
+    font-size: 20px;
     opacity: 0.7;
     font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+    width: 30px;
+}
+
+@media screen and (max-width: 520px) {
+    .sidebar ul li span.hideable {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .sidebar ul li {
+        letter-spacing: 0 !important;
+        font-size: 17px;
+    }
+    .sidebar ul li i {
+        margin-right: 0 !important;
+    }
 }
 
 .fa-bars:hover {
@@ -460,6 +469,16 @@ Header
     }
 }
 
+header {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+.sticky-wrapper {
+   
+}
+
+.slided .sticky-wrapper, .slided header {
+}
 
 header ul {
     background-color: #E53935;

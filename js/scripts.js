@@ -99,7 +99,6 @@ $('.fa-bars').click(function(){
         left: "50%",
     }, 250);
     $( ".slidingBody" ).addClass('slided');
-    //$('.is-sticky header').css('left','50%');
     $(this).css('opacity','0');
     $('.site-title').css('opacity','0');
     $('#mobilenav').onePageNav({
@@ -111,10 +110,10 @@ $('.fa-bars').click(function(){
 
 // Hide nav mobile
 $('.mobile-nav li a, .closeMenu').click(function(){
+    $( ".slidingBody" ).removeClass('slided');
     $( ".slidingBody, header" ).animate({
         left: "0",
     }, 250);
-    $( ".slidingBody" ).removeClass('slided');
     $('.fa-bars').css('opacity','1');
     $('.site-title').css('opacity','1');
 });
