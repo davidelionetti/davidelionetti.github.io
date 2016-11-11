@@ -1,19 +1,58 @@
+/**********************************
+Z-Indexes
+**********************************/
+.sidebar {
+    position: fixed;
+    z-index: -1;
+}
+.preloader {
+    position: fixed;
+    z-index: 1;
+}
+#slides {
+    z-index: 2;
+}
+.z-headtext {
+    z-index: 3 !important;
+}
+.content, .content div, .content .btn {
+    z-index: 5;
+}
+.overlay {
+    position: absolute;
+    z-index: 25;
+}
+header {
+    position: relative;
+    z-index: 10000 !important;
+}
+@media screen and (max-width: 930px) {
+    header .fa {
+        z-index: 10000;
+    }
+}
+.contact-info-group input, textarea {
+    z-index: 3000;
+}
+
+/**********************************
+Preloader
+**********************************/
+#slides {
+    display: none;
+}
 .preloader {
     height: 100%;
     width: 100%;
     background-color: #212121;
-    position: fixed;
-    z-index: 1;
     -moz-transition: opacity 0.5s ease-out;
     -webkit-transition: opacity 0.5s ease-out;
     transition: opacity 0.5s ease-out;
+    display: none;
 }
 
 .hidden {
-    visibility: hidden !important;
-}
-.z-headtext {
-    z-index: 3 !important;
+    /*visibility: hidden !important;*/
 }
 .typed-cursor {
     display: none;
@@ -22,25 +61,35 @@
     opacity: 0;
 }
 .overhidden {
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
+    overflow-x: hidden;
+    position: relative;
+    z-index: -1;
 }
 
 
 /**********************************
 General
 **********************************/
-
 html, body {
     height: 100%;
     width: 100%;
     color: rgba(0,0,0,0.85);
     font-family: 'Lato', sans-serif;
     text-align: center;
+    
 }
 
 html, body, div, p {
     margin: 0;
     padding: 0;
+}
+
+.slidingBody {
+    position: relative;
+    -webkit-box-shadow: -2.5px 0px 15px 0px rgba(125,121,125,1);
+    -moz-box-shadow: -2.5px 0px 15px 0px rgba(125,121,125,1);
+    box-shadow: -2.5px 0px 15px 0px rgba(125,121,125,1);
 }
 
 a, .linkable {
@@ -91,10 +140,6 @@ section#contacts {
 
 .section-content {
     background-color: #fff;
-}
-
-.content div, .content .btn {
-    z-index: 5;
 }
 
 .small-btn {
@@ -224,18 +269,11 @@ Popup
 /**********************************
 Slider
 **********************************/
-
-#slides {
-    z-index: 2;
-}
-
 .overlay {
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 25;
     display: flex;
     -moz-transition: opacity 0.75s ease-out;
     -webkit-transition: opacity 0.75s ease-out;
@@ -280,47 +318,56 @@ Sidebar
 **********************************/
 
 @media screen and (min-width: 930px) {
-    .sidebar {
-        display: none !important;
-    }
-    .spacer {
-        display: none !important;
-    }
+
 }
 
 .spacer {
     background-color: rgba(0,0,0,0.5);
-    width: 40%;
+    width: 50%;
     height: 100%;
     position: fixed;
     top: 0;
     right: 0;
-    display: none;
 }
 
 .sidebar {
-    position: fixed;
-    z-index: 12000;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    display: none;
+}
+
+.sidebar hr {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 55px;
+    opacity: 0.5;
+}
+
+.sidebar .siteTitleMobile {
+    font-weight: bold;
+    opacity: 0.8;
+    width: 50%;
+    position: relative;
+    top: 16.5px;
+    font-size: 20px;
 }
     
 .sidebar ul {
     list-style: none;
     background-color: #fff;
-    width: 60%;
+    width: 50%;
     height: 100%;
     margin: 0 !important;
-    padding: 40px 0 0 0 !important;
+    padding: 90px 0 0 0 !important;
     text-align: center;
 }
 
 .sidebar ul li {
-    padding-bottom: 50px;
+    padding-bottom: 35px;
     text-transform: uppercase;
+    font-size: 18px;
     opacity: 0.7;
     font-family: 'Montserrat', sans-serif;
 }
@@ -361,12 +408,6 @@ Preloader
 /**********************************
 Header
 **********************************/
-
-header {
-    position: relative;
-    z-index: 10000 !important;
-}
-
 .site-title {
     display: none;
 }
@@ -402,7 +443,6 @@ header {
         letter-spacing: 0.5px;
     }
     header .fa {
-        z-index: 10000;
         opacity: 0;
         transition: opacity .25s ease-in-out;
         -moz-transition: opacity .25s ease-in-out;
@@ -460,6 +500,13 @@ header ul li.current {
     border-bottom: 3px solid #fff !important;
 }
 
+.slided .is-sticky header {
+    left: 50% !important;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
 /**********************************
 Content
 **********************************/
@@ -467,7 +514,6 @@ Content
 .content {
     padding: 140px 0 40px;
     width: 100%;
-    z-index: 5;
     margin: 0 auto;
     background-color: #e3e3e3;
 }
@@ -976,7 +1022,6 @@ label {
     line-height: 50px;
     position: relative;
     background: none;
-    z-index: 3000;
 }
 
 .contact-info-group input, textarea {
@@ -1009,7 +1054,6 @@ textarea {
     width: 100%;
     resize: none;
     position: relative;
-    z-index: 3000;
     background: none;
     min-height: 100px;
     outline: none;

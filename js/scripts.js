@@ -87,10 +87,21 @@
       offset: '45%'
     })
 
+    
+    
+    
+
+    
+
 // Show nav mobile
-$('.fa-bars').on('click', function(){
-    $( ".sidebar" ).show('slide');
-    $( ".spacer" ).delay(270).fadeIn('slow');
+$('.fa-bars').click(function(){
+    $( ".slidingBody" ).animate({
+        left: "50%",
+    }, 250);
+    $( ".slidingBody" ).addClass('slided');
+    //$('.is-sticky header').css('left','50%');
+    $(this).css('opacity','0');
+    $('.site-title').css('opacity','0');
     $('#mobilenav').onePageNav({
         changeHash: false,
         scrollThreshold: 0.2
@@ -99,14 +110,13 @@ $('.fa-bars').on('click', function(){
 
 
 // Hide nav mobile
-$('.mobile-nav li a').on("click", function(){
-    $( '.mobile-nav' ).delay(100).hide('slide');
-    $( '.spacer' ).fadeOut('fast');
-});
-
-$('.spacer').on("click", function(){
-    $( '.mobile-nav' ).delay(100).hide('slide');
-    $( '.spacer' ).fadeOut('fast');
+$('.mobile-nav li a, .closeMenu').click(function(){
+    $( ".slidingBody, header" ).animate({
+        left: "0",
+    }, 250);
+    $( ".slidingBody" ).removeClass('slided');
+    $('.fa-bars').css('opacity','1');
+    $('.site-title').css('opacity','1');
 });
 
 

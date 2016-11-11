@@ -4,7 +4,6 @@
         <title>Davide Lionetti</title>
         <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
@@ -16,6 +15,8 @@
         <div class="preloader">
         </div>
         <div class="sidebar">
+            <div class="siteTitleMobile">Davide Lionetti</div>
+            <hr>
             <ul class="mobile-nav" id="mobilenav">
                 <li class="current"><a href="#intro">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -27,260 +28,266 @@
             </ul>
             <div class="spacer"></div>
         </div>
-        <div id="slides">
-            <div class="overlay">
-                <div class="title reset-opacity"></div><br>
-                <div class="subtitle reset-opacity"></div><br>
-                <div class="btn blackButton" id="trigger">Sure!</div>
-                <div class="btn" id="skip">Let's begin!</div>
-            </div>
-            <div class="slides-container">
-                <img src="img/potsdamer-platz-berlin-night.jpg" class="hidden">
-            </div>
-        </div>
-        <a href="#">
-            <div class="popup hidejs">
-                <i class="fa fa-angle-up"></i>
-            </div>
-        </a>
-        <header class="hidden" id="top">
-            <div class="site-title">Davide Lionetti</div>
-            <i class="fa fa-bars" aria-hidden="true"></i>
-            <ul id="mainnav">
-                <li class="current"><a href="#intro">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#social-engagement">Social Engagement</a></li>
-                <li><a href="#work-experience">Work experience</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </header>
-        <div class="content hidden" id="intro">
-            <div class="container">
-                <section id="about">
-                    <div class="section-content depth2">
-                        <img src="img/davide-lionetti-square.jpg" class="portrait">
-                        <h1>Davide Lionetti</h1>
-                        <i class="fa fa-map-marker"></i>Berlin, Germany
-                        <div class="responsiveBr"><i class="fa fa-calendar"></i>13/10/1996</div>
-                        <p class="opacity">Hi everybody, my name is Davide Lionetti. I designed and developed this webpage as an alternative to a long, boring, traditional printed CV. For any further question, feel free to contact me. Hope to hearing from you soon.</p>
-                        <a class="btn redButton waves-effect" onclick="$.scrollTo(document.getElementById('contacts'), 750);">Contact me</a>
+        <div class="slidingBody">
+            <div class="closeMenu">
+                <div id="slides">
+                    <div class="overlay">
+                        <div class="title reset-opacity"></div><br>
+                        <div class="subtitle reset-opacity"></div><br>
+                        <div class="btn blackButton" id="trigger">Sure!</div>
+                        <div class="btn" id="skip">Let's begin!</div>
                     </div>
-                </section>
-                <section id="skills">
-                    <h2 class="section-title"><i class="fa fa-gears"></i>Skills</h2>
-                    <div class="section-content depth2">
-                        <div class="flex-container flex-skills">
-                            <div class="flex-child"  id="first-skills">            
-                                <div class="flex-container" id="special-flex">
-                                    <div class="flex-child firstRow">
-                                        <div class="circle-container"><div id="html" class="first-row-circle" data-value="0.9" data-size="85" data-thickness="5"></div><strong>HTML</strong></div>
+                    <div class="slides-container">
+                        <img src="img/potsdamer-platz-berlin-night.jpg" class="hidden">
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="popup hidejs">
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                </a>
+            </div>
+            <header class="hidden" id="top">
+                    <div class="site-title">Davide Lionetti</div>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <ul id="mainnav">
+                        <li class="current"><a href="#intro">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#social-engagement">Social Engagement</a></li>
+                        <li><a href="#work-experience">Work experience</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </header>
+            <div class="closeMenu">
+                <div class="content hidden" id="intro">
+                    <div class="container">
+                        <section id="about">
+                            <div class="section-content depth2">
+                                <img src="img/davide-lionetti-square.jpg" class="portrait">
+                                <h1>Davide Lionetti</h1>
+                                <i class="fa fa-map-marker"></i>Berlin, Germany
+                                <div class="responsiveBr"><i class="fa fa-calendar"></i>13/10/1996</div>
+                                <p class="opacity">Hi everybody, my name is Davide Lionetti. I designed and developed this webpage as an alternative to a long, boring, traditional printed CV. For any further questions, feel free to contact me. I look forward to hearing from you soon.</p>
+                                <a class="btn redButton waves-effect" onclick="$.scrollTo(document.getElementById('contacts'), 750);">Contact me</a>
+                            </div>
+                        </section>
+                        <section id="skills">
+                            <h2 class="section-title"><i class="fa fa-gears"></i>Skills</h2>
+                            <div class="section-content depth2">
+                                <div class="flex-container flex-skills">
+                                    <div class="flex-child"  id="first-skills">            
+                                        <div class="flex-container" id="special-flex">
+                                            <div class="flex-child firstRow">
+                                                <div class="circle-container"><div id="html" class="first-row-circle" data-value="0.9" data-size="85" data-thickness="5"></div><strong>HTML</strong></div>
+                                            </div>
+                                            <div class="flex-child firstRow">
+                                                <div class="circle-container"><div id="css" class="first-row-circle" data-value="0.8" data-size="85" data-thickness="5"></div><strong>CSS</strong></div>
+                                            </div>
+                                            <div class="flex-child secondRow">
+                                                <div class="circle-container"><div id="jquery" class="second-row-circle" data-value="0.3" data-size="85" data-thickness="5"></div><strong>jQuery</strong></div>
+                                            </div>
+                                            <div class="flex-child secondRow">
+                                                <div class="circle-container"><div id="php" class="second-row-circle" data-value="0.2" data-size="85" data-thickness="5"></div><strong>PHP</strong></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="flex-child firstRow">
-                                        <div class="circle-container"><div id="css" class="first-row-circle" data-value="0.8" data-size="85" data-thickness="5"></div><strong>CSS</strong></div>
+                                    <div class="flex-child" id="second-skills">
+                                        <div class="flex-container" id="special-flex">
+                                            <div class="flex-child firstRow">
+                                                <div class="circle-container"><div id="wordpress" class=" first-row-circle" data-value="0.8" data-size="85" data-thickness="5"></div><strong>Wordpress</strong></div>
+                                            </div>
+                                            <div class="flex-child firstRow">
+                                                <div class="circle-container"><div id="seo" class="first-row-circle" data-value="0.5" data-size="85" data-thickness="5"></div><strong>SEO</strong></div>
+                                            </div>
+                                            <div class="flex-child secondRow">
+                                                <div class="circle-container"><div id="crm" class="second-row-circle" data-value="0.5" data-size="85" data-thickness="5"></div><strong>CRM</strong></div>
+                                            </div>
+                                            <div class="flex-child secondRow">
+                                                <div class="circle-container"><div id="photoshop" class="second-row-circle" data-value="0.3" data-size="85" data-thickness="5"></div><strong>Photoshop</strong></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="flex-child secondRow">
-                                        <div class="circle-container"><div id="jquery" class="second-row-circle" data-value="0.3" data-size="85" data-thickness="5"></div><strong>jQuery</strong></div>
+                                </div>
+                                <h3 class="reset-opacity ms-office"><i class="fa fa-language"></i>MS Office</h3>
+                                <p id="ms-office">Click on the skill for some sample works!</p>
+                                <div class="flex-container" id="office">
+                                <div class="flex-child">
+                                    <div class="circle-container"><a href="https://drive.google.com/open?id=0BzQpLvOYMmW6bkRtZnp1ZFZvUmM" target="_blank"><div id="power-point" class="circleOffice forhover" data-value="0.85" data-size="85" data-thickness="5"></div><strong>PPT</strong></a></div>
+                                </div>
+                                <div class="flex-child">
+                                    <div class="circle-container"><a href="https://drive.google.com/open?id=0BzQpLvOYMmW6Nm5hT3dGN24xQ2c" target="_blank"><div id="excel" class="circleOffice forhover" data-value="0.7" data-size="85" data-thickness="5"></div><strong>Excel</strong></a></div>
+                                </div>
+                                <div class="flex-child">
+                                    <div class="circle-container"><div id="word" class="circleOffice forhover" data-value="0.6" data-size="85" data-thickness="5"></div><strong>Word</strong></div>
+                                </div>
+                                <div class="flex-child">
+                                    <div class="circle-container"><div id="access" class="circleOffice forhover" data-value="0.2" data-size="85" data-thickness="5"></div><strong>Access</strong></div>
+                                </div>
+                            </div>
+                                <h3 class="reset-opacity language"><i class="fa fa-language"></i>Languages</h3>
+                            <div class="flex-container" id="languages">
+                                <div class="flex-child">
+                                    <h4>Italian</h4>
+                                    <div class="circle-container"><div id="italian" class="circleLanguages forhover" data-value="1" data-size="85" data-thickness="5"></div><strong>C2</strong></div>
+                                </div>
+                                <div class="flex-child">
+                                    <h4>English</h4>
+                                    <div class="circle-container"><div id="english" class="circleLanguages" data-value="0.91667" data-size="85" data-thickness="5"></div><strong>C2</strong></div>
+                                </div>
+                                <div class="flex-child">
+                                    <h4>German</h4>
+                                    <div class="circle-container"><div id="german" class="circleLanguages" data-value="0.6667" data-size="85" data-thickness="5"></div><strong>B2</strong></div>
+                                </div>
+                                <div class="flex-child">
+                                    <h4>French</h4>
+                                    <div class="circle-container"><div id="french" class="circleLanguages" data-value="0.5" data-size="85" data-thickness="5"></div><strong>B1</strong></div>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section id="education">
+                            <h2 class="section-title"><i class="fa fa-graduation-cap"></i>Education</h2>
+                            <div class="timeline">
+                                <div class="experience-container left">
+                                    <div class="experience first">
+                                        <h3><a href="http://www.hwr-berlin.de/en/department-of-business-and-economics/study-programmes/international-business-management/" target="_blank">International Business Management</a></h3>
+                                        <p class="time">2015 - Present</p>
+                                        <p class="location"><a href="http://www.hwr-berlin.de/" target="_blank">@ Berlin School of Economics and Law</a></p>
+                                        <p class="grade">Grade: 1,6 / 6</p>
+                                        <p class="description">
+                                            <strong>Bachelor of Arts</strong><br>
+                                            Currently enrolled in the 3rd semester of this study programme, accreditated by . Main areas of focus are <strong>accounting</strong>, <strong>finance</strong>, <strong>HR</strong>, <strong>analytical skills</strong> and <strong>marketing</strong>. <br>
+                                        </p>
+                                        <a href="http://www.hwr-berlin.de/en/department-of-business-and-economics/study-programmes/international-business-management/" target="_blank" class="btn redButton small-btn">More details</a>
                                     </div>
-                                    <div class="flex-child secondRow">
-                                        <div class="circle-container"><div id="php" class="second-row-circle" data-value="0.2" data-size="85" data-thickness="5"></div><strong>PHP</strong></div>
+                                    <div class="point"></div>
+                                </div>
+                                <div class="experience-container right">
+                                    <div class="experience last">
+                                        <h3><a href="https://goo.gl/0qbuFg" target="_blank">International Relations for Marketing</a></h3>
+                                        <p class="time">2010 - 2015</p>
+                                        <p class="location"><a href="http://www.itccolamonico.it" target="_blank">@ ITC Colamonico</a></p>
+                                        <p class="grade">Grade: 97 / 100</p>
+                                        <p class="description">
+                                            <strong>High school diploma</strong><br>
+                                            Graduation followed several partecipations to <strong>international projects</strong>, which streghtened my language and communication skills. Principles of <strong>accounting</strong>, <strong>finance</strong>, <strong>marketing</strong> and business law also played an important role throughout the entire study programme.<br>
+                                        </p>
+                                        <a href="https://goo.gl/0qbuFg" target="_blank" class="btn redButton small-btn">More details</a>
+                                    </div>
+                                    <div class="point"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="social-engagement">
+                            <h2 class="section-title"><i class="fa fa-users"></i>Social Engagement</h2>
+                            <div class="section-content depth2">
+                                <p>I've been...</p><br>
+                                <div>
+                                    <h5>An <strong>active member</strong> of a non profit</h5>
+                                    <p class="description">I create their online presence, designing their website and setting up their Google Apps account, together with many different IT tasks such as network, email, CRM and invoicing system.</p>
+                                </div>
+                                <div><h5><strong>Student representative</strong> in my school</h5></div>
+                                <p class="description right-align">I managed the organizational committee for the events we had to organize together with the school board and political entities of the town.</p>
+                            </div>
+                        </section>
+                        <section id="work-experience">
+                            <h2 class="section-title"><i class="fa fa-suitcase"></i>Work Experience</h2>
+                            <div class="timeline">
+                                <div class="experience-container left">
+                                    <div class="experience first">
+                                        <h3>General Manager</h3>
+                                        <p class="time">2016 - Present</p>
+                                        <p class="location"><a href="#" target="_blank">@ Cozy Nest</a></p>
+                                        <p class="description">
+                                            I started a business in my apartment. I began to rent it out with Airbnb, and I am currently setting up the entire <strong>online presence</strong> of the structure, as well as its <strong>website</strong>, for reaching new customers and improving the experience of my guests during their stay.
+                                        </p>
+                                        <a href="https://www.airbnb.com/rooms/12951972" target="_blank" class="btn redButton small-btn">More details</a>
+                                    </div>
+                                    <div class="point"></div>
+                                </div>
+                                <div class="experience-container right">
+                                    <div class="experience">
+                                        <h3>Web Master</h3>
+                                        <p class="time">2015 - present</p>
+                                        <p class="location"><a href="http://www.geohouse.eu/" target="_blank">@ Geohouse</a></p>
+                                        <p class="description">
+                                            I set up the entire online presence and IT structure of this organization. I am responsible for the design of their <strong>website</strong>, the setup of their <strong>CRM</strong> and <strong>invoicing</strong> system, together with their maintenance and <strong>marketing automation</strong> tasks. I opened their <strong>Google Apps</strong> non-profit account and set up all the apps and subsidiary accounts. I am working for the redesign of their website at the moment.
+                                        </p>
+                                        <a href="http://www.geohouse.eu/" target="_blank" class="btn redButton small-btn">More details</a>
+                                    </div>
+                                    <div class="point"></div>
+                                </div>
+                                <div class="experience-container left">
+                                    <div class="experience">
+                                        <h3>Internship</h3>
+                                        <p class="time">June 2014</p>
+                                        <p class="location"><a href="http://www.mercadueviaggi.it/index.php" target="_blank">@ Travel Agency Mercadue Viaggi</a></p>
+                                        <p class="description">
+                                            While still at high school, I did an intership in the tourism field with this travel agency and I was therefore responsible for <strong>ticketing</strong>, <strong>dealing</strong> with customers, suppliers and their e-mails.
+                                        </p>
+                                    </div>
+                                    <div class="point"></div>
+                                </div>
+                                <div class="experience-container right">
+                                    <div class="experience last">
+                                        <h3>Dj / Event organizer</h3>
+                                        <p class="time">2010 - 2012</p>
+                                        <p class="description">
+                                            Given my big passion for music, I set up an organization which organized under my supervision several events. I was responsible for <strong>managing</strong> the organization, <strong>selecting</strong> artists, <strong>dealing</strong> with suppliers, <strong>promoting</strong> the venues and finally <strong>perform</strong> as a dj.
+                                        </p>
+                                    </div>
+                                    <div class="point"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="interests">
+                            <h2 class="section-title"><i class="fa fa-child"></i>Interests</h2>
+                            <div class="social depth2">
+                                <div class="section-content">
+                                    <p>In the last month...</p>
+                                    <br>
+                                    <div class="flex-container">
+                                        <div class="flex-child"><div class="round linkable facebook"><i class="fa fa-futbol-o"></i></div><div class="counter"><br><span class="timer" data-from="0" data-to="8"></span>&nbsp;Football<br>Matches</div></div>
+                                        <div class="flex-child"><div class="round linkable linkedin"><i class="fa fa-headphones"></i></div><div class="counter"><br><span class="timer" data-from="0" data-to="10"></span>&nbsp;Events<br>Attended</div></div>
+                                        <div class="flex-child"><div class="round linkable phone"><i class="fa fa-laptop"></i></div><div class="counter"><br><span class="timer" data-from="0" data-to="60"></span>&nbsp;hrs on<br>web design</div></div>
+                                        <div class="flex-child"><div class="round linkable mail"><i class="fa fa-rocket"></i></div><div class="counter"><br><span class="timer" data-from="0" data-to="100"></span>&nbsp;hrs on<br>enterpreunership</div></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex-child" id="second-skills">
-                                <div class="flex-container" id="special-flex">
-                                    <div class="flex-child firstRow">
-                                        <div class="circle-container"><div id="wordpress" class=" first-row-circle" data-value="0.8" data-size="85" data-thickness="5"></div><strong>Wordpress</strong></div>
+                        </section>
+                        <section id="contacts">
+                            <h2 class="section-title"><i class="fa fa-send"></i>Contacts</h2>
+                            <div class="section-content reset-focus depth2">
+                                <form action="https://formspree.io/davidelionettii@gmail.com" method="POST">
+                                    <div class="contact-info-group">
+                                        <label for="Name">Your Name</label>
+                                        <input type="text" name="Name" required class="firstInput">
                                     </div>
-                                    <div class="flex-child firstRow">
-                                        <div class="circle-container"><div id="seo" class="first-row-circle" data-value="0.5" data-size="85" data-thickness="5"></div><strong>SEO</strong></div>
+                                    <div class="contact-info-group">
+                                        <label for="_replyto">Your Email</label>
+                                        <input type="email" name="_replyto" class="second-field">
                                     </div>
-                                    <div class="flex-child secondRow">
-                                        <div class="circle-container"><div id="crm" class="second-row-circle" data-value="0.5" data-size="85" data-thickness="5"></div><strong>CRM</strong></div>
-                                    </div>
-                                    <div class="flex-child secondRow">
-                                        <div class="circle-container"><div id="photoshop" class="second-row-circle" data-value="0.3" data-size="85" data-thickness="5"></div><strong>Photoshop</strong></div>
+                                    <label for="Message" class="for-textarea">Your Message</label>
+                                    <textarea name="Message"></textarea>
+                                    <input type="submit" value="send" class="btn redButton" onclick="ga('send', 'event', 'Form Submission', 'click');">
+                                </form>
+                            </div>
+                            <div class="social depth2">
+                                <div class="section-content">
+                                    <div class="flex-container">
+                                        <div class="flex-child"><a href="http://www.facebook.com/davidelionettii" target="_blank"><div class="round linkable facebook"><i class="fa fa-facebook"></i></div></a></div>
+                                        <div class="flex-child"><a href="https://de.linkedin.com/in/davide-lionetti-a70a48b6
+            " target="_blank"><div class="round linkable linkedin"><i class="fa fa-linkedin"></i></div></a></div>
+                                        <div class="flex-child"><a href="tel:+4915780743664" target="_blank"><div class="round linkable phone"><i class="fa fa-phone"></i></div></a></div>
+                                        <div class="flex-child"><a href="mailto:davidelionettii@gmail.com" title="davidelionettii@gmail.com" target="_blank"><div class="round linkable mail"><i class="fa fa-envelope"></i></div></a></div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <h3 class="reset-opacity ms-office"><i class="fa fa-language"></i>MS Office</h3>
-                        <p id="ms-office">Click on the skill for some sample works!</p>
-                        <div class="flex-container" id="office">
-                        <div class="flex-child">
-                            <div class="circle-container"><a href="https://drive.google.com/open?id=0BzQpLvOYMmW6bkRtZnp1ZFZvUmM" target="_blank"><div id="power-point" class="circleOffice forhover" data-value="0.85" data-size="85" data-thickness="5"></div><strong>PPT</strong></a></div>
-                        </div>
-                        <div class="flex-child">
-                            <div class="circle-container"><a href="https://drive.google.com/open?id=0BzQpLvOYMmW6Nm5hT3dGN24xQ2c" target="_blank"><div id="excel" class="circleOffice forhover" data-value="0.7" data-size="85" data-thickness="5"></div><strong>Excel</strong></a></div>
-                        </div>
-                        <div class="flex-child">
-                            <div class="circle-container"><div id="word" class="circleOffice forhover" data-value="0.6" data-size="85" data-thickness="5"></div><strong>Word</strong></div>
-                        </div>
-                        <div class="flex-child">
-                            <div class="circle-container"><div id="access" class="circleOffice forhover" data-value="0.2" data-size="85" data-thickness="5"></div><strong>Access</strong></div>
-                        </div>
+                        </section>
                     </div>
-                        <h3 class="reset-opacity language"><i class="fa fa-language"></i>Languages</h3>
-                    <div class="flex-container" id="languages">
-                        <div class="flex-child">
-                            <h4>Italian</h4>
-                            <div class="circle-container"><div id="italian" class="circleLanguages forhover" data-value="1" data-size="85" data-thickness="5"></div><strong>C2</strong></div>
-                        </div>
-                        <div class="flex-child">
-                            <h4>English</h4>
-                            <div class="circle-container"><div id="english" class="circleLanguages" data-value="0.91667" data-size="85" data-thickness="5"></div><strong>C2</strong></div>
-                        </div>
-                        <div class="flex-child">
-                            <h4>German</h4>
-                            <div class="circle-container"><div id="german" class="circleLanguages" data-value="0.6667" data-size="85" data-thickness="5"></div><strong>B2</strong></div>
-                        </div>
-                        <div class="flex-child">
-                            <h4>French</h4>
-                            <div class="circle-container"><div id="french" class="circleLanguages" data-value="0.5" data-size="85" data-thickness="5"></div><strong>B1</strong></div>
-                        </div>
-                    </div>
-                    </div>
-                </section>
-                <section id="education">
-                    <h2 class="section-title"><i class="fa fa-graduation-cap"></i>Education</h2>
-                    <div class="timeline">
-                        <div class="experience-container left">
-                            <div class="experience first">
-                                <h3><a href="http://www.hwr-berlin.de/en/department-of-business-and-economics/study-programmes/international-business-management/" target="_blank">International Business Management</a></h3>
-                                <p class="time">2015 - Present</p>
-                                <p class="location"><a href="http://www.hwr-berlin.de/" target="_blank">@ Berlin School of Economics and Law</a></p>
-                                <p class="grade">Grade: 1,6 / 6</p>
-                                <p class="description">
-                                    <strong>Bachelor of Arts</strong><br>
-                                    Currently enrolled in the 3rd semester of this study programme, accreditated by . Main areas of focus are <strong>accounting</strong>, <strong>finance</strong>, <strong>HR</strong>, <strong>analytical skills</strong> and <strong>marketing</strong>. <br>
-                                </p>
-                                <a href="http://www.hwr-berlin.de/en/department-of-business-and-economics/study-programmes/international-business-management/" target="_blank" class="btn redButton small-btn">More details</a>
-                            </div>
-                            <div class="point"></div>
-                        </div>
-                        <div class="experience-container right">
-                            <div class="experience last">
-                                <h3><a href="https://goo.gl/0qbuFg" target="_blank">International Relations for Marketing</a></h3>
-                                <p class="time">2010 - 2015</p>
-                                <p class="location"><a href="http://www.itccolamonico.it" target="_blank">@ ITC Colamonico</a></p>
-                                <p class="grade">Grade: 97 / 100</p>
-                                <p class="description">
-                                    <strong>High school diploma</strong><br>
-                                    Graduation followed several partecipations to <strong>international projects</strong>, which streghtened my language and communication skills. Principles of <strong>accounting</strong>, <strong>finance</strong>, <strong>marketing</strong> and business law also played an important role throughout the entire study programme.<br>
-                                </p>
-                                <a href="https://goo.gl/0qbuFg" target="_blank" class="btn redButton small-btn">More details</a>
-                            </div>
-                            <div class="point"></div>
-                        </div>
-                    </div>
-                </section>
-                <section id="social-engagement">
-                    <h2 class="section-title"><i class="fa fa-users"></i>Social Engagement</h2>
-                    <div class="section-content depth2">
-                        <p>I've been...</p><br>
-                        <div>
-                            <h5>An <strong>active member</strong> of a non profit</h5>
-                            <p class="description">I create their online presence, designing their website and setting up their Google Apps account, together with many different IT tasks such as network, email, CRM and invoicing system.</p>
-                        </div>
-                        <div><h5><strong>Student representative</strong> in my school</h5></div>
-                        <p class="description right-align">I managed the organizational committee for the events we had to organize together with the school board and political entities of the town.</p>
-                    </div>
-                </section>
-                <section id="work-experience">
-                    <h2 class="section-title"><i class="fa fa-suitcase"></i>Work Experience</h2>
-                    <div class="timeline">
-                        <div class="experience-container left">
-                            <div class="experience first">
-                                <h3>General Manager</h3>
-                                <p class="time">2016 - Present</p>
-                                <p class="location"><a href="#" target="_blank">@ Cozy Nest</a></p>
-                                <p class="description">
-                                    I started a business in my apartment. I began to rent it out with Airbnb, and I am currently setting up the entire <strong>online presence</strong> of the structure, as well as its <strong>website</strong>, for reaching new customers and improving the experience of my guests during their stay.
-                                </p>
-                                <a href="https://www.airbnb.com/rooms/12951972" target="_blank" class="btn redButton small-btn">More details</a>
-                            </div>
-                            <div class="point"></div>
-                        </div>
-                        <div class="experience-container right">
-                            <div class="experience">
-                                <h3>Web Master</h3>
-                                <p class="time">2015 - present</p>
-                                <p class="location"><a href="http://www.geohouse.eu/" target="_blank">@ Geohouse</a></p>
-                                <p class="description">
-                                    I set up the entire online presence and IT structure of this organization. I am responsible for the design of their <strong>website</strong>, the setup of their <strong>CRM</strong> and <strong>invoicing</strong> system, together with their maintenance and <strong>marketing automation</strong> tasks. I opened their <strong>Google Apps</strong> non-profit account and set up all the apps and subsidiary accounts. I am working for the redesign of their website at the moment.
-                                </p>
-                                <a href="http://www.geohouse.eu/" target="_blank" class="btn redButton small-btn">More details</a>
-                            </div>
-                            <div class="point"></div>
-                        </div>
-                        <div class="experience-container left">
-                            <div class="experience">
-                                <h3>Internship</h3>
-                                <p class="time">June 2014</p>
-                                <p class="location"><a href="http://www.mercadueviaggi.it/index.php" target="_blank">@ Travel Agency Mercadue Viaggi</a></p>
-                                <p class="description">
-                                    While still at high school, I did an intership in the tourism field with this travel agency and I was therefore responsible for <strong>ticketing</strong>, <strong>dealing</strong> with customers, suppliers and their e-mails.
-                                </p>
-                            </div>
-                            <div class="point"></div>
-                        </div>
-                        <div class="experience-container right">
-                            <div class="experience last">
-                                <h3>Dj / Event organizer</h3>
-                                <p class="time">2010 - 2012</p>
-                                <p class="description">
-                                    Given my big passion for music, I set up an organization which organized under my supervision several events. I was responsible for <strong>managing</strong> the organization, <strong>selecting</strong> artists, <strong>dealing</strong> with suppliers, <strong>promoting</strong> the venues and finally <strong>perform</strong> as a dj.
-                                </p>
-                            </div>
-                            <div class="point"></div>
-                        </div>
-                    </div>
-                </section>
-                <section id="interests">
-                    <h2 class="section-title"><i class="fa fa-child"></i>Interests</h2>
-                    <div class="social depth2">
-                        <div class="section-content">
-                            <p>In the last month...</p>
-                            <br>
-                            <div class="flex-container">
-                                <div class="flex-child"><div class="round linkable facebook"><i class="fa fa-futbol-o"></i></div><div class="counter"><br><span class="timer" data-from="0" data-to="8"></span>&nbsp;Football<br>Matches</div></div>
-                                <div class="flex-child"><div class="round linkable linkedin"><i class="fa fa-headphones"></i></div><div class="counter"><br><span class="timer" data-from="0" data-to="10"></span>&nbsp;Events<br>Attended</div></div>
-                                <div class="flex-child"><div class="round linkable phone"><i class="fa fa-laptop"></i></div><div class="counter"><br><span class="timer" data-from="0" data-to="60"></span>&nbsp;hrs on<br>web design</div></div>
-                                <div class="flex-child"><div class="round linkable mail"><i class="fa fa-rocket"></i></div><div class="counter"><br><span class="timer" data-from="0" data-to="100"></span>&nbsp;hrs on<br>enterpreunership</div></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="contacts">
-                    <h2 class="section-title"><i class="fa fa-send"></i>Contacts</h2>
-                    <div class="section-content reset-focus depth2">
-                        <form action="https://formspree.io/davidelionettii@gmail.com" method="POST">
-                            <div class="contact-info-group">
-                                <label for="Name">Your Name</label>
-                                <input type="text" name="Name" required class="firstInput">
-                            </div>
-                            <div class="contact-info-group">
-                                <label for="_replyto">Your Email</label>
-                                <input type="email" name="_replyto" class="second-field">
-                            </div>
-                            <label for="Message" class="for-textarea">Your Message</label>
-                            <textarea name="Message"></textarea>
-                            <input type="submit" value="send" class="btn redButton" onclick="ga('send', 'event', 'Form Submission', 'click');">
-                        </form>
-                    </div>
-                    <div class="social depth2">
-                        <div class="section-content">
-                            <div class="flex-container">
-                                <div class="flex-child"><a href="http://www.facebook.com/davidelionettii" target="_blank"><div class="round linkable facebook"><i class="fa fa-facebook"></i></div></a></div>
-                                <div class="flex-child"><a href="https://de.linkedin.com/in/davide-lionetti-a70a48b6
-    " target="_blank"><div class="round linkable linkedin"><i class="fa fa-linkedin"></i></div></a></div>
-                                <div class="flex-child"><a href="tel:+4915780743664" target="_blank"><div class="round linkable phone"><i class="fa fa-phone"></i></div></a></div>
-                                <div class="flex-child"><a href="mailto:davidelionettii@gmail.com" title="davidelionettii@gmail.com" target="_blank"><div class="round linkable mail"><i class="fa fa-envelope"></i></div></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/graingert-wow/1.2.2/wow.min.js"></script>
@@ -293,7 +300,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
         <script src="js/scripts.js"></script>
-        <script src="js/wow.settings.js"></script>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
