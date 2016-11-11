@@ -107,11 +107,15 @@ $('.fa-bars').click(function(){
     });
 });
 
+$('header').on('sticky-start', function() {
+    //$('header').css('left','auto');
+});
+
 
 // Hide nav mobile
 $('.mobile-nav li a, .closeMenu').click(function(){
     $( ".slidingBody" ).removeClass('slided');
-    $( ".slidingBody, header" ).animate({
+    $( ".slidingBody" ).animate({
         left: "0",
     }, 250);
     $('.fa-bars').css('opacity','1');
