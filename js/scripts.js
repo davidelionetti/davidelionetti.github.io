@@ -111,6 +111,10 @@ $('header').on('sticky-start', function() {
     //$('header').css('left','auto');
 });
 
+$('.mobilenav').overflowing('.sidebar', function(){
+    console.log('overflowed');
+});
+
 
 // Hide nav mobile
 $('.mobile-nav li a, .closeMenu').click(function(){
