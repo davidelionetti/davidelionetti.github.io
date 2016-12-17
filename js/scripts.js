@@ -80,7 +80,7 @@
         $('.timer').fadeIn('slow');
         // CountTo
         $('.timer').countTo({
-            speed: 3000
+            speed: 2000
         });
         this.destroy()
       },
@@ -259,3 +259,19 @@ $(document).ready(function() {
             new WOW().init();
             $('.wow').attr('data-wow-delay','0.2s').attr('data-wow-duration','0.8s');
                         });
+
+
+// Collapsable
+
+$('.collapseBtn').click(function(){
+    if( $(this).hasClass('open') ){
+        $(this).parent().find('.collapsable').slideUp();
+        $(this).text('more');
+        $(this).removeClass('open');
+    }
+    else {
+        $(this).parent().find('.collapsable').slideDown();
+        $(this).text('close');
+        $(this).addClass('open');
+    }
+});
