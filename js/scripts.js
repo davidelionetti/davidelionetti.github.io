@@ -98,9 +98,9 @@ $('.fa-bars').click(function(){
     $( ".slidingBody" ).animate({
         left: "50%",
     }, 250);
-    $('.closeMenu').css('background','none');
-    $('.sidebar ul li').show()
+    $('.sidebar ul li').show();
     $('.sidebar ul').css('background-color','#fff');
+    $('.sidebar ul').css('width','50%');
     $( ".slidingBody" ).addClass('slided');
     $(this).css('opacity','0');
     $('.site-title').css('opacity','0');
@@ -127,6 +127,9 @@ $('.mobile-nav li a, .closeMenu').click(function(){
     }, 250);
     $('.fa-bars').css('opacity','1');
     $('.site-title').css('opacity','1');
+    $('.sidebar ul li').hide();
+    $('.sidebar ul').css('background-color','#e3e3e3');
+    $('.sidebar ul').css('width','100%');
 });
 
 
