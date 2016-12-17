@@ -100,7 +100,6 @@ $('.fa-bars').click(function(){
     }, 250);
     $('.sidebar ul li').show();
     $('.sidebar ul').css('background-color','#fff');
-    $('.sidebar ul').css('width','50%');
     $( ".slidingBody" ).addClass('slided');
     $(this).css('opacity','0');
     $('.site-title').css('opacity','0');
@@ -129,7 +128,6 @@ $('.mobile-nav li a, .closeMenu').click(function(){
     $('.site-title').css('opacity','1');
     $('.sidebar ul li').hide();
     $('.sidebar ul').css('background-color','#e3e3e3');
-    $('.sidebar ul').css('width','100%');
 });
 
 
