@@ -100,6 +100,7 @@ $('.fa-bars').click(function(){
     }, 250);
     $('.sidebar ul li').show();
     $('.sidebar ul').css('background-color','#fff');
+    $('.spacer').css('background-color','#e3e3e3');
     $( ".slidingBody" ).addClass('slided');
     $(this).css('opacity','0');
     $('.site-title').css('opacity','0');
@@ -113,10 +114,6 @@ $('header').on('sticky-start', function() {
     //$('header').css('left','auto');
 });
 
-$('.mobilenav').overflowing('.sidebar', function(){
-    console.log('overflowed');
-});
-
 
 // Hide nav mobile
 $('.mobile-nav li a, .closeMenu').click(function(){
@@ -128,6 +125,7 @@ $('.mobile-nav li a, .closeMenu').click(function(){
     $('.site-title').css('opacity','1');
     $('.sidebar ul li').hide();
     $('.sidebar ul').css('background-color','#e3e3e3');
+    $('.spacer').css('background-color','#e3e3e3');
 });
 
 
@@ -275,7 +273,7 @@ $('.collapseBtn').click(function(){
     }
     else {
         $(this).parent().find('.collapsable').slideDown();
-        $(this).text('close');
+        $(this).text('less');
         $(this).addClass('open');
     }
 });
