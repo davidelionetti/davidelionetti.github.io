@@ -5,6 +5,14 @@ Z-Indexes
     position: fixed;
     z-index: -1;
 }
+.closeMenu {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 100;
+    left: 100%;
+}
 .preloader {
     position: fixed;
     z-index: 1;
@@ -43,7 +51,7 @@ header {
 Preloader
 **********************************/
 #slides {
-    display: none;
+    
 }
 .preloader {
     height: 100%;
@@ -52,11 +60,10 @@ Preloader
     -moz-transition: opacity 0.5s ease-out;
     -webkit-transition: opacity 0.5s ease-out;
     transition: opacity 0.5s ease-out;
-    display: none;
 }
 
 .hidden {
-    /*visibility: hidden !important;*/
+    visibility: hidden !important;
 }
 .typed-cursor {
     display: none;
@@ -65,7 +72,7 @@ Preloader
     opacity: 0;
 }
 .overhidden {
-    /*overflow-y: hidden;*/
+    overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
     z-index: -1;
@@ -827,7 +834,6 @@ p.time {
 .collapsable {
     line-height: 27px;
     color: rgba(0,0,0,0.85);
-    padding-top: 15px;
 }
 
 .collapsable p {
