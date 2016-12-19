@@ -83,6 +83,7 @@ html, body {
     font-family: 'Lato', sans-serif;
     text-align: center;
     background-color: #e3e3e3;
+    overflow-x: hidden;
 }
 
 html, body, div, p {
@@ -549,6 +550,7 @@ Content
     width: 100%;
     margin: 0 auto;
     background-color: #e3e3e3;
+    position: relative;
 }
 
 .section-title {
