@@ -95,6 +95,7 @@
 
 // Show nav mobile
 $('.fa-bars').click(function(){
+    $('html, body').css('background','none');
     $( ".slidingBody" ).animate({
         left: "50%",
     }, 250);
@@ -119,6 +120,8 @@ $('.fa-bars').click(function(){
 
 // Hide nav mobile
 $('.mobile-nav li a, .closeMenu').click(function(){
+    $('body').css('overflow-x','auto');
+    $('html, body').css('background-color','#e3e3e3');
     $( ".slidingBody" ).removeClass('slided');
     $( ".slidingBody" ).animate({
         left: "0",
@@ -288,6 +291,3 @@ $('.collapseBtn').click(function(){
         $(this).addClass('open');
     }
 });
-
-// Google Analytics
-
