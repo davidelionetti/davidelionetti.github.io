@@ -2,28 +2,21 @@
 Z-Indexes
 **********************************/
 .sidebar {
-    position: fixed;
     z-index: -1;
 }
 .closeMenu {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 50%;
     z-index: 100;
-    left: 100%;
 }
 .preloader {
-    position: fixed;
     z-index: 1;
 }
-#slides {
+#slides, #slides .slidingImg {
     z-index: 2;
 }
 .z-headtext {
     z-index: 3 !important;
 }
-.content, .content div, .content .btn {
+.content, .content div, .content .btn, .content section {
     z-index: 5;
 }
 .overlay {
@@ -60,6 +53,7 @@ Preloader
     -moz-transition: opacity 0.5s ease-out;
     -webkit-transition: opacity 0.5s ease-out;
     transition: opacity 0.5s ease-out;
+    position: fixed;
 }
 
 .hidden {
@@ -104,6 +98,14 @@ html, body, div, p {
 }
 
 .slidingBody.slided {
+}
+
+.closeMenu {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    left: 100%;
 }
 
 a, .linkable {
@@ -345,6 +347,7 @@ Sidebar
 }
 
 .sidebar {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
